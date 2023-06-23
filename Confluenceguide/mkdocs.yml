@@ -1,0 +1,42 @@
+site_name: Confluence guide
+site_author: Tatsiana Kulesha
+nav:
+  - Overview: index.md
+  - Confluence interface: src/overview.md
+  - How to work in Confluence:
+      - How to use and create personal spaces: src/managing/usecreatepersspace.md
+      - How to come back to a created personal space: src/managing/comeback.md
+      - How to navigate a personal space: src/managing/navigate.md
+      - How to create pages in a personal space: src/managing/pages.md
+      - How to disable access to your personal space in Confluence: src/managing/disableaccess.md
+      - How to delete a personal space: src/managing/deletperspace.md
+      - How to create a team space: src/managing/createteam.md
+      - How to create a page in a team space: src/managing/teampage.md
+      - How to create a draft on a personal or a team page: src/managing/teamdraft.md
+      - How to come back to the last published version: src/managing/lastpublished.md
+      - How to edit an existing page: src/managing/existedit.md
+      - How to set a new homepage: src/managing/homepage.md
+  - Troubleshooting: troubleshooting.md
+
+theme:
+  name: material
+  logo: "src/img/logo.png"
+  feature:
+    tabs: false
+  language: "en"
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.extra
+  - pymdownx.snippets:
+      base_path: docs/src
+
+plugins:
+  - search
+
+extra_css:
+  - "stylesheets/extra-page-content.css"
+  - "https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  - "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
