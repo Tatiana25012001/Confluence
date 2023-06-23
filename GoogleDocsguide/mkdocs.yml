@@ -1,0 +1,35 @@
+site_name: Confluence
+site_author: Anastasiya Fomina
+
+nav:
+  - Overview: index.md
+  - Getting started with Google Docs: src/overview.md
+  - Manage a text in Google Docs:
+      - How to highlight a text in Google Docs: src/managing/create.md
+      - How to change the font color: src/managing/edit.md
+      - How to bold, italicize, or strikethrough a text: src/managing/delete.md
+      - How to change the font: src/managing/font.md
+      - How to chane the font size: src/managing/fontsize.md
+
+theme:
+  name: material
+  logo: "src/img/logo.png"
+  feature:
+    tabs: false
+  language: "en"
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.extra
+  - pymdownx.snippets:
+      base_path: docs/src
+
+plugins:
+  - search
+
+extra_css:
+  - "stylesheets/extra-page-content.css"
+  - "https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  - "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
